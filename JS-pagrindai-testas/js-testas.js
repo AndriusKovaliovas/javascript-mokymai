@@ -4,7 +4,7 @@ Sugeneruokite atsitiktinį skaičių (eurų sumą) nuo 1 iki 1000.
 Pritaikykite savo sukurtą funkciją ir išspausdinkite atitikmenį
 doleriais.
 */
-console.log('1 sprendimas:')
+console.log('1 sprendimas:..........')
 
 function skaiciuotikursa(EUR, USD) {
     let kursas = EUR * USD
