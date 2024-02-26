@@ -10,7 +10,7 @@ function skaiciuotikursa(EUR, USD) {
     let kursas = EUR * USD
     console.log(`${EUR} EUR * ${USD} = ${(kursas).toFixed(2)} USD`)
 }
-skaiciuotikursa ((Math.round(Math.random() * (1000-1+1)+1)), 1.11)
+skaiciuotikursa((Math.round(Math.random() * (1000 - 1 + 1) + 1)), 1.11)
 
 console.log('')
 /*
@@ -25,7 +25,7 @@ function skaiciuotikursa(USD, EUR) {
     let kursas = USD * EUR
     console.log(`${USD} USD * ${EUR} = ${(kursas).toFixed(2)} EUR`)
 }
-skaiciuotikursa ((Math.round(Math.random() * (1000-1+1)+1)), 0.95)
+skaiciuotikursa((Math.round(Math.random() * (1000 - 1 + 1) + 1)), 0.95)
 
 console.log('')
 /*
@@ -41,15 +41,15 @@ Per mažas svoris = BMI < 18.5
 console.log('3 sprendimas:')
 let svoris = 80
 let ugis = 1.8
-let BMI = svoris/ugis**2
+let BMI = svoris / ugis ** 2
 
 console.log(`Svoris: ${svoris}
 Ūgis: ${ugis}
 BMI:, ${(BMI).toFixed(2)}`)
 
-if(BMI > 25) {
+if (BMI > 25) {
     console.log('Viršsvoris = BMI > 25')
-} else if(BMI >= 18.5 && BMI <25) {
+} else if (BMI >= 18.5 && BMI < 25) {
     console.log('Normalu = 18.5 <= BMI < 25')
 } else {
     console.log('Per mažas svoris = BMI < 18.5')
@@ -81,12 +81,12 @@ duomenis iš Farenheito į Celsijų, ir atvirkščiai.
 console.log('5 sprendimas:')
 
 let pagalFarenheita = 32
-let pagalCelsiju = ((pagalFarenheita-32)/1.8).toFixed(2)
+let pagalCelsiju = ((pagalFarenheita - 32) / 1.8).toFixed(2)
 
 console.log(`Pagal farenheita: ${pagalFarenheita} = ${pagalCelsiju} pagal celsiju`)
 
 let pagalcelsiju = 0
-let pagalfarenheita = ((pagalcelsiju*9/5+32).toFixed(2))
+let pagalfarenheita = ((pagalcelsiju * 9 / 5 + 32).toFixed(2))
 
 console.log(`Pagal celsiju: ${pagalcelsiju} = ${pagalfarenheita} pagal farenheita`)
 
@@ -98,9 +98,11 @@ dešimties neturėtų būti brūkšniuko.
 */
 console.log('6 sprendimas:')
 
+let n = ''
 for (let i = 1; i <= 10; i++) {
-    console.log(i)
- }
+    n += i + '-'
+}
+console.log(n)
 
 console.log('')
 /*
@@ -115,7 +117,7 @@ console.log('7 sprendimas:')
 
 let symbol = '*'
 console.log(symbol)
-for(i = 1; i <= 4; i++) {
+for (i = 1; i <= 4; i++) {
     symbol += '*'
     console.log(symbol)
 }
@@ -153,5 +155,12 @@ mažoji raidė, skaičius, specialusis simbolis. Visi slaptažodžio
 simboliai privalo būti atsitiktiniai ir atsitiktine tvarka.
 */
 console.log('10 sprendimas:')
+
+let slaptazodis = []
+
+for(let i = 0; i < 12; i++)
+slaptazodis.push(Math.round(Math.random()*10))
+
+console.log(slaptazodis.join(' '))
 
 console.log('')
