@@ -161,6 +161,6 @@ let slaptazodis = []
 for(let i = 0; i < 12; i++)
 slaptazodis.push(Math.round(Math.random()*10))
 
-console.log(slaptazodis.join(' '))
+console.log(`Slaptažodis: ${slaptazodis.join('')}`)
 
 console.log('')
